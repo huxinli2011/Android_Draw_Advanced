@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bezier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="贝赛尔曲线"/>
+    <Button
+        android:id="@+id/bitmap_shader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="BitmapShader"/>
+    <Button
+        android:id="@+id/bitmap_blurmask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="BlurMaskFilter"/>
+    <Button
+        android:id="@+id/bitmap_lineargradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="LinearGradient"/>
+    <Button
+        android:id="@+id/bitmap_radial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="RadialGradient"/>
+    <Button
+        android:id="@+id/bitmap_shadowlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ShadowLayerDemo"/>
+
+</LinearLayout>

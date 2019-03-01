@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.draw.adavnced">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.draw.adavnced.BezierDemo.MyActivity"/>
+        <activity android:name="com.draw.adavnced.BezierDemo.AnimWaveActivity"/>
+        <activity android:name="com.draw.adavnced.BezierDemo.BezierGestureTrackActivity"/>
+        <activity android:name="com.draw.adavnced.BezierDemo.BezierWaveActivity"/>
+        <activity android:name="com.draw.adavnced.BezierDemo.NormalGestureTrackActivity"/>
+
+        <activity android:name="com.draw.adavnced.BitmapShader.MyActivity"/>
+        <activity android:name="com.draw.adavnced.BitmapShader.BitmapShaderActivity"/>
+        <activity android:name="com.draw.adavnced.BitmapShader.TelescopeActivity"/>
+        <activity android:name="com.draw.adavnced.BitmapShader.AvatorActivity"/>
+
+        <activity android:name="com.draw.adavnced.BlurMaskFilterDemo.MyActivity"/>
+
+        <activity android:name="com.draw.adavnced.LinearGradient.MyActivity"/>
+        <activity android:name="com.draw.adavnced.LinearGradient.LinearGradientDemoActivity"/>
+        <activity android:name="com.draw.adavnced.LinearGradient.ShimmerTextActivity"/>
+
+        <activity android:name="com.draw.adavnced.RadialGradient.MyActivity"/>
+
+        <activity android:name="com.draw.adavnced.ShadowLayerDemo.MyActivity"/>
+        <activity android:name="com.draw.adavnced.ShadowLayerDemo.ShadowLayerActivity"/>
+        <activity android:name="com.draw.adavnced.ShadowLayerDemo.TextShadowActivity"/>
+        <activity android:name="com.draw.adavnced.ShadowLayerDemo.BitmapShadowActivity"/>
+
+    </application>
+
+
+
+</manifest>
