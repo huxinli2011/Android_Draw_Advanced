@@ -8,7 +8,13 @@
         android:id="@+id/bezier"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="贝赛尔曲线"/>
+        android:text="贝赛尔曲线 7.1"/>
+    <Button
+        android:id="@+id/bitmap_shadowlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ShadowLayerDemo--setShadowLayer与阴影效果 7.2"/>
     <Button
         android:id="@+id/bitmap_shader"
         android:layout_width="match_parent"
@@ -33,11 +39,6 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="RadialGradient"/>
-    <Button
-        android:id="@+id/bitmap_shadowlayer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="ShadowLayerDemo"/>
+
 
 </LinearLayout>

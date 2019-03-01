@@ -9,6 +9,7 @@
             android:id="@+id/set_shadow_layer_demo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="setShadowLayer示例"/>
 
     <Button

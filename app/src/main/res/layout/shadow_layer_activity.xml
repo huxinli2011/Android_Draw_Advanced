@@ -9,29 +9,34 @@
             android:id="@+id/dx_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="dx+5"/>
     <Button
             android:id="@+id/dy_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+        android:textAllCaps="false"
             android:text="dy+5"/>
 
     <Button
             android:id="@+id/radius_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+        android:textAllCaps="false"
             android:text="radius+5"/>
 
     <Button
             android:id="@+id/clear_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+        android:textAllCaps="false"
             android:text="clearShadow"/>
 
     <Button
             android:id="@+id/show_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+        android:textAllCaps="false"
             android:text="showShadow"/>
 
     <com.draw.adavnced.ShadowLayerDemo.ShadowLayerView

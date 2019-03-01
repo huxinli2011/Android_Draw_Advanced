@@ -7,9 +7,7 @@ import android.widget.TextView;
 
 import com.draw.adavnced.R;
 
-/**
- * Created by qijian on 17/1/18.
- */
+
 public class TextShadowActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

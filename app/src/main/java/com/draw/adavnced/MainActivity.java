@@ -17,6 +17,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,com.draw.adavnced.BezierDemo.MyActivity.class));
             }
         });
+        findViewById(R.id.bitmap_shadowlayer).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,com.draw.adavnced.ShadowLayerDemo.MyActivity.class));
+            }
+        });
+
         findViewById(R.id.bitmap_shader).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,11 +48,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,com.draw.adavnced.RadialGradient.MyActivity.class));
             }
         });
-        findViewById(R.id.bitmap_shadowlayer).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,com.draw.adavnced.ShadowLayerDemo.MyActivity.class));
-            }
-        });
+
     }
 }

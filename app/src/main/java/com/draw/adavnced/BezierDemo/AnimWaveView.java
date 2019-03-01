@@ -45,9 +45,9 @@ public class AnimWaveView extends View {
         int originY = 300;
         int halfWaveLen = mItemWaveLength / 2;
         mPath.moveTo(-mItemWaveLength + dx, originY);
-        for (int i = -mItemWaveLength; i <= getWidth() + mItemWaveLength; i += mItemWaveLength) {
-            mPath.rQuadTo(halfWaveLen / 2, -100, halfWaveLen, 0);
-            mPath.rQuadTo(halfWaveLen / 2, 100, halfWaveLen, 0);
+        for (int i = -mItemWaveLength; i <= getWidth() + mItemWaveLength; i += mItemWaveLength) { //1、使用for循环画出当前频幕显示的波形
+            mPath.rQuadTo(halfWaveLen / 2, -100, halfWaveLen, 0); //2、画波长中的前半个波
+            mPath.rQuadTo(halfWaveLen / 2, 100, halfWaveLen, 0);  //3、画波长中的后半个波
         }
         mPath.lineTo(getWidth(), getHeight());
         mPath.lineTo(0, getHeight());

@@ -7,9 +7,7 @@ import android.view.View;
 
 import com.draw.adavnced.R;
 
-/**
- * Created by qijian on 17/1/17.
- */
+
 public class ShadowLayerView extends View {
     private Paint mPaint = new Paint();
     private Bitmap mDogBmp;
@@ -32,13 +30,13 @@ public class ShadowLayerView extends View {
     }
 
     private void init() {
-        setLayerType(LAYER_TYPE_SOFTWARE, null);
+        setLayerType(LAYER_TYPE_SOFTWARE, null);//禁用硬件加速
         mPaint.setColor(Color.BLACK);
         mPaint.setTextSize(25);
         mDogBmp = BitmapFactory.decodeResource(getResources(), R.drawable.dog);
     }
 
-
+    //模糊半径越大越模糊
     public void changeRadius() {
         mRadius++;
         postInvalidate();
@@ -54,7 +52,7 @@ public class ShadowLayerView extends View {
         postInvalidate();
     }
 
-    public void setShadow(boolean showShadow) {
+    public void setShadow(boolean showShadow) {//清除阴影也可以mRadius为0
         mSetShadow = showShadow;
         postInvalidate();
     }
@@ -67,7 +65,7 @@ public class ShadowLayerView extends View {
         canvas.drawColor(Color.WHITE);
 
         if (mSetShadow) {
-            mPaint.setShadowLayer(mRadius, mDx, mDy, Color.GRAY);
+            mPaint.setShadowLayer(mRadius, mDx, mDy, Color.GRAY);//注意 setShadowLayer() 只有文字绘制阴影支持硬件加速，其它都不支持。setShadowLayer所指定的颜色对图片是不起作用的。
         } else {
             mPaint.clearShadowLayer();
         }
