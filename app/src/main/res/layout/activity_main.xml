@@ -16,29 +16,30 @@
         android:textAllCaps="false"
         android:text="ShadowLayerDemo--setShadowLayer与阴影效果 7.2"/>
     <Button
-        android:id="@+id/bitmap_shader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:text="BitmapShader"/>
-    <Button
         android:id="@+id/bitmap_blurmask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="BlurMaskFilter"/>
+        android:text="BlurMaskFilter 发光效果与图片阴影 7.3"/>
+    <Button
+        android:id="@+id/bitmap_shader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Shader(着色器)之BitmapShader 7.4"/>
+
     <Button
         android:id="@+id/bitmap_lineargradient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="LinearGradient"/>
+        android:text="Shader之LinearGradient"/>
     <Button
         android:id="@+id/bitmap_radial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="RadialGradient"/>
+        android:text="Shader之RadialGradient"/>
 
 
 </LinearLayout>

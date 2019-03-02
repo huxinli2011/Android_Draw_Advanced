@@ -24,6 +24,7 @@ public class RadialGradientView extends View {
 protected void onDraw(Canvas canvas) {
     super.onDraw(canvas);
 
+    //之所以在onDraw函数中初始化mRadialGradient，是因为getWith()和getHeight()函数需要在生命周期函数onLayout()执行完成后才会有值。
     /**
      * 两色渐变
      */

@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,com.draw.adavnced.ShadowLayerDemo.MyActivity.class));
             }
         });
+        findViewById(R.id.bitmap_blurmask).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,com.draw.adavnced.BlurMaskFilterDemo.MyActivity.class));
+            }
+        });
 
         findViewById(R.id.bitmap_shader).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,12 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,com.draw.adavnced.BitmapShader.MyActivity.class));
             }
         });
-        findViewById(R.id.bitmap_blurmask).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,com.draw.adavnced.BlurMaskFilterDemo.MyActivity.class));
-            }
-        });
+
         findViewById(R.id.bitmap_lineargradient).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -14,22 +14,22 @@ public class BitmapShadowView extends View {
 
     public BitmapShadowView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setLayerType(LAYER_TYPE_SOFTWARE, null);
+        setLayerType(LAYER_TYPE_SOFTWARE, null);//禁用硬件加速
         mPaint = new Paint();
         mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.cat_dog);
-        mAlphaBmp = mBitmap.extractAlpha();
+        mAlphaBmp = mBitmap.extractAlpha();//抽取bitmap的alpha值
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        int width = 200;
+        int width = 400;
         int height = width * mAlphaBmp.getWidth() / mAlphaBmp.getHeight();
 
         //绘制阴影
         mPaint.setColor(Color.GRAY);
-        mPaint.setMaskFilter(new BlurMaskFilter(10, BlurMaskFilter.Blur.NORMAL));
+        mPaint.setMaskFilter(new BlurMaskFilter(10, BlurMaskFilter.Blur.NORMAL));//使用内外发光
         canvas.drawBitmap(mAlphaBmp, null, new Rect(10, 10, width, height), mPaint);
 
         //绘制原图像

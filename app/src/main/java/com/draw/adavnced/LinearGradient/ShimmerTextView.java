@@ -14,7 +14,7 @@ public class ShimmerTextView extends TextView {
 
     public ShimmerTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mPaint = getPaint();
+        mPaint = getPaint();// TextView需要获取自带画笔
         int length = (int) mPaint.measureText(getText().toString());
         createAnim(length);
         createLinearGradient(length);

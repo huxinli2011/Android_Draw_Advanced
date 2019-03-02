@@ -23,7 +23,7 @@ public class TelescopeView extends View {
     @Override
 public boolean onTouchEvent(MotionEvent event) {
     switch (event.getAction()) {
-        case MotionEvent.ACTION_DOWN:
+        case MotionEvent.ACTION_DOWN://按下或移动的时候得到手指所在位置
             mDx = (int) event.getX();
             mDy = (int) event.getY();
             postInvalidate();
@@ -45,6 +45,9 @@ public boolean onTouchEvent(MotionEvent event) {
     @Override
 protected void onDraw(Canvas canvas) {
     super.onDraw(canvas);
+    //1、将图片缩放到控件大小
+    //2、将mBitmapBG作为BitmapShader设置给Paint,然后在手指所在位置画圆，并把图圈部分显示出来
+
     if (mBitmapBG == null){
         mBitmapBG = Bitmap.createBitmap(getWidth(),getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvasbg = new Canvas(mBitmapBG);
